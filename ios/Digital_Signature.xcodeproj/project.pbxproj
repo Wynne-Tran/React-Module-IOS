@@ -14,6 +14,8 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8807645927EA2ECC0022F6CB /* DataToRN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807645827EA2ECC0022F6CB /* DataToRN.swift */; };
 		8807649A27EA42B00022F6CB /* DataToRN.m in Sources */ = {isa = PBXBuildFile; fileRef = 8807649927EA42B00022F6CB /* DataToRN.m */; };
+		8807660227EAE4CD0022F6CB /* keyChainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807660127EAE4CD0022F6CB /* keyChainWrapper.swift */; };
+		8807660627EAE5210022F6CB /* keyChainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8807660527EAE5210022F6CB /* keyChainWrapper.m */; };
 		886023CC27E9665C00A14AB1 /* HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 886023CA27E9665C00A14AB1 /* HelloWorld.cpp */; };
 		886023D527E966D200A14AB1 /* HelloWorldWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 886023D427E966D200A14AB1 /* HelloWorldWrapper.mm */; };
 		886024DC27E98B2500A14AB1 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 886023E227E977A600A14AB1 /* RCTCalendarModule.m */; };
@@ -48,6 +50,8 @@
 		8807645827EA2ECC0022F6CB /* DataToRN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataToRN.swift; sourceTree = "<group>"; };
 		8807646127EA2FA10022F6CB /* Digital_Signature-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Digital_Signature-Bridging-Header.h"; sourceTree = "<group>"; };
 		8807649927EA42B00022F6CB /* DataToRN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataToRN.m; sourceTree = "<group>"; };
+		8807660127EAE4CD0022F6CB /* keyChainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyChainWrapper.swift; sourceTree = "<group>"; };
+		8807660527EAE5210022F6CB /* keyChainWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keyChainWrapper.m; sourceTree = "<group>"; };
 		886023CA27E9665C00A14AB1 /* HelloWorld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorld.cpp; sourceTree = "<group>"; };
 		886023CB27E9665C00A14AB1 /* HelloWorld.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloWorld.hpp; sourceTree = "<group>"; };
 		886023CF27E966AE00A14AB1 /* HelloWorldWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldWrapper.h; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				8807645827EA2ECC0022F6CB /* DataToRN.swift */,
 				8807646127EA2FA10022F6CB /* Digital_Signature-Bridging-Header.h */,
+				8807660127EAE4CD0022F6CB /* keyChainWrapper.swift */,
+				8807660527EAE5210022F6CB /* keyChainWrapper.m */,
 			);
 			name = Digital_Signature;
 			sourceTree = "<group>";
@@ -438,8 +444,10 @@
 				8807645927EA2ECC0022F6CB /* DataToRN.swift in Sources */,
 				886023CC27E9665C00A14AB1 /* HelloWorld.cpp in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				8807660227EAE4CD0022F6CB /* keyChainWrapper.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				886023D527E966D200A14AB1 /* HelloWorldWrapper.mm in Sources */,
+				8807660627EAE5210022F6CB /* keyChainWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
