@@ -18,7 +18,7 @@ class KeyChainWrapper: NSObject {
   
   @objc func savePassword(_ password:String, callback: RCTResponseSenderBlock){
     if(KeychainWrapper.standard.set(password, forKey: "password")){
-      print(KeychainWrapper.standard.string(forKey: password))
+      print( KeychainWrapper.standard.string(forKey: "password") as Any)
       callback([true])
     }
     else{

@@ -11,12 +11,7 @@ class RNShare : NSObject {
     }
   
   
-  @objc func share() -> String {
-    //print(HelloWorldWrapper().sayHello())
-    return HelloWorldWrapper().sayHello()
-  }
-  
-  @objc func someMethod(successCallback: RCTResponseSenderBlock) -> Void {
+  @objc func someMethod(_ successCallback: RCTResponseSenderBlock) -> Void {
     successCallback([NSNull(), HelloWorldWrapper().sayHello() as Any])
     }
   
