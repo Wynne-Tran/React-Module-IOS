@@ -19,6 +19,9 @@
 		886023CC27E9665C00A14AB1 /* HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 886023CA27E9665C00A14AB1 /* HelloWorld.cpp */; };
 		886023D527E966D200A14AB1 /* HelloWorldWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 886023D427E966D200A14AB1 /* HelloWorldWrapper.mm */; };
 		886024DC27E98B2500A14AB1 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 886023E227E977A600A14AB1 /* RCTCalendarModule.m */; };
+		88E8B17227EC474A0044D0C0 /* C_to_S.c in Sources */ = {isa = PBXBuildFile; fileRef = 88E8B17127EC474A0044D0C0 /* C_to_S.c */; };
+		88E8B1BA27EC59920044D0C0 /* C_to_S.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E8B1B927EC59920044D0C0 /* C_to_S.swift */; };
+		88E8B1F027EC67100044D0C0 /* C_to_S.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E8B1EF27EC67100044D0C0 /* C_to_S.m */; };
 		AD884D70EB149F88031D7337 /* libPods-Digital_Signature.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 496C6919FBD42EAD727CFEDB /* libPods-Digital_Signature.a */; };
 		D9A355520A23681B3D124F60 /* libPods-Digital_Signature-Digital_SignatureTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CFDBC19C573B7502DEE531 /* libPods-Digital_Signature-Digital_SignatureTests.a */; };
 /* End PBXBuildFile section */
@@ -58,6 +61,10 @@
 		886023D427E966D200A14AB1 /* HelloWorldWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldWrapper.mm; sourceTree = "<group>"; };
 		886023E127E9777D00A14AB1 /* RCTCalendarModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCalendarModule.h; sourceTree = "<group>"; };
 		886023E227E977A600A14AB1 /* RCTCalendarModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCalendarModule.m; sourceTree = "<group>"; };
+		88E8B17027EC474A0044D0C0 /* C_to_S.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C_to_S.h; sourceTree = "<group>"; };
+		88E8B17127EC474A0044D0C0 /* C_to_S.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = C_to_S.c; sourceTree = "<group>"; };
+		88E8B1B927EC59920044D0C0 /* C_to_S.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_to_S.swift; sourceTree = "<group>"; };
+		88E8B1EF27EC67100044D0C0 /* C_to_S.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C_to_S.m; sourceTree = "<group>"; };
 		A931B8711B003B98880715D9 /* Pods-Digital_Signature.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Digital_Signature.debug.xcconfig"; path = "Target Support Files/Pods-Digital_Signature/Pods-Digital_Signature.debug.xcconfig"; sourceTree = "<group>"; };
 		C305C7595E5A51913C0691D6 /* Pods-Digital_Signature-Digital_SignatureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Digital_Signature-Digital_SignatureTests.release.xcconfig"; path = "Target Support Files/Pods-Digital_Signature-Digital_SignatureTests/Pods-Digital_Signature-Digital_SignatureTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5CFDBC19C573B7502DEE531 /* libPods-Digital_Signature-Digital_SignatureTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Digital_Signature-Digital_SignatureTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +212,10 @@
 		88E8B16C27EC44BC0044D0C0 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				88E8B17027EC474A0044D0C0 /* C_to_S.h */,
+				88E8B17127EC474A0044D0C0 /* C_to_S.c */,
+				88E8B1B927EC59920044D0C0 /* C_to_S.swift */,
+				88E8B1EF27EC67100044D0C0 /* C_to_S.m */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -471,11 +482,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E8B17227EC474A0044D0C0 /* C_to_S.c in Sources */,
 				8807649A27EA42B00022F6CB /* DataToRN.m in Sources */,
+				88E8B1F027EC67100044D0C0 /* C_to_S.m in Sources */,
 				886024DC27E98B2500A14AB1 /* RCTCalendarModule.m in Sources */,
 				8807645927EA2ECC0022F6CB /* DataToRN.swift in Sources */,
 				886023CC27E9665C00A14AB1 /* HelloWorld.cpp in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				88E8B1BA27EC59920044D0C0 /* C_to_S.swift in Sources */,
 				8807660227EAE4CD0022F6CB /* keyChainWrapper.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				886023D527E966D200A14AB1 /* HelloWorldWrapper.mm in Sources */,

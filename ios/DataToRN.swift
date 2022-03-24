@@ -13,6 +13,7 @@ class RNShare : NSObject {
   
   @objc func someMethod(_ successCallback: RCTResponseSenderBlock) -> Void {
     successCallback([NSNull(), HelloWorldWrapper().sayHello() as Any])
+    
     }
   
 

@@ -8,12 +8,10 @@
 
 import React, {useState, useEffect} from 'react';
 
-import {StyleSheet, Text, View, TextInput} from 'react-native';
+import {StyleSheet, Text, View, TextInput, Alert} from 'react-native';
 import {NativeModules, Button} from 'react-native';
 
 const App = () => {
-
-  // eslint-disable-next-line no-unused-vars
   useEffect(() => {
     NativeModules.KeyChainWrapper;
   }, []);
@@ -24,7 +22,8 @@ const App = () => {
     NativeModules.KeyChainWrapper.savePassword(password, value => {
       debugger
       if (value) {
-        //console.log(password);
+        setPrint();
+        console.log('Success');
       } else {
         console.log('Error');
       }
@@ -52,24 +51,49 @@ const App = () => {
       },
     );
   };
-  console.log(print);
+
+  const onPress_3 = (num: any) => {
+    const {C_to_S} = NativeModules;
+    //eslint-disable-next-line radix
+    if (parseInt(num)) {
+      // eslint-disable-next-line radix
+      C_to_S.HelloC(parseInt(num), (_err, res) => console.log(res));
+    } else {
+      Alert.alert('Please enter a digit');
+    }
+
+    //C_to_S.HelloC((_err, res) => console.log(res));
+  };
 
   return (
     <View style={styles.container}>
       <Text> Practice !</Text>
-      <Button title="C++" color="#841584" onPress={onPress} />
-      <Button title="Object C" color="#841584" onPress={onPress_2} />
+      <Button title="C++ to React Native" color="#841584" onPress={onPress} />
+      <Button
+        title="Obj C to React Native"
+        color="#841584"
+        onPress={onPress_2}
+      />
 
       <TextInput
         // eslint-disable-next-line react-native/no-inline-styles
         style={{width: '50%', height: 40, borderBottomColor: 'black'}}
         onChangeText={e => setPassword(e)}
         value={password}
+        placeholder={'Input here'}
       />
+
       <Button
-        title="Send Data To Swift"
+        title="React Native To Swift"
         color="#841584"
         onPress={savePasswordBtnClicked}
+      />
+
+      <Button
+        title="C To React Native"
+        color="#841584"
+        // eslint-disable-next-line radix
+        onPress={() => onPress_3(password)}
       />
 
       <Text>{print}</Text>
