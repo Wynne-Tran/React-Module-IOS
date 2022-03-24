@@ -8,18 +8,28 @@
 
 import React, {useState, useEffect} from 'react';
 
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {StyleSheet, Text, View, TextInput} from 'react-native';
 import {NativeModules, Button} from 'react-native';
 
 const App = () => {
+
+  // eslint-disable-next-line no-unused-vars
+  useEffect(() => {
+    NativeModules.KeyChainWrapper;
+  }, []);
+
+  const [password, setPassword] = useState('');
+
+  const savePasswordBtnClicked = () => {
+    NativeModules.KeyChainWrapper.savePassword(password, value => {
+      debugger
+      if (value) {
+        //console.log(password);
+      } else {
+        console.log('Error');
+      }
+    });
+  };
 
   const [print, setPrint] = useState('');
   const RNShare = NativeModules.RNShare;
@@ -48,8 +58,21 @@ const App = () => {
     <View style={styles.container}>
       <Text> Practice !</Text>
       <Button title="C++" color="#841584" onPress={onPress} />
-
       <Button title="Object C" color="#841584" onPress={onPress_2} />
+
+      <TextInput
+        // eslint-disable-next-line react-native/no-inline-styles
+        style={{width: '50%', height: 40, borderBottomColor: 'black'}}
+        onChangeText={e => setPassword(e)}
+        value={password}
+      />
+      <Button
+        title="Send Data To Swift"
+        color="#841584"
+        onPress={savePasswordBtnClicked}
+      />
+
+      <Text>{print}</Text>
     </View>
   );
 };
