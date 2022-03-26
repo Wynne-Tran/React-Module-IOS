@@ -20,9 +20,11 @@ class KeyChainWrapper: NSObject {
     if(KeychainWrapper.standard.set(password, forKey: "password")){
       print( KeychainWrapper.standard.string(forKey: "password") as Any)
       callback([true])
+      
     }
     else{
       callback([false])
+      
     }
   }
 }
