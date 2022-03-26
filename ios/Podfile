@@ -5,6 +5,7 @@ platform :ios, '11.0'
 
 target 'Digital_Signature' do
   pod 'SwiftKeychainWrapper', '~> 4.0'
+  pod 'Bip39.swift', '~> 0.1'
   config = use_native_modules!
 
   use_react_native!(
